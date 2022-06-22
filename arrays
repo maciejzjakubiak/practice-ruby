@@ -1,0 +1,12 @@
+array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+new =[]
+
+x = 0
+
+array.each do |item|
+  if item[:price] > 5
+    new << item
+  end
+end
+
+p new
